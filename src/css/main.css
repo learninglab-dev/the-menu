@@ -1,5 +1,27 @@
-body {
-  transition: color 1s ease;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #bbb;
+
+}
+
+li:last-child {
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.inactive {
+  transition: border-bottom .4s ease;
+  border-bottom: 0px solid rgba(50,200,255,0);
 }
 
 .active {

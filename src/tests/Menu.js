@@ -5,17 +5,17 @@ const Menu = () => (
   <div>
   <ul className="menu">
         <li>
-          <NavLink exact activeClassName="active" to="/">
+          <NavLink exact className="inactive" activeClassName="active" to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/about">
+          <NavLink className="inactive" activeClassName="active" to="/about">
             About
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/basicmenu">
+          <NavLink className="inactive" activeClassName="active" to="/basicmenu">
             Basic Menu
           </NavLink>
         </li>
