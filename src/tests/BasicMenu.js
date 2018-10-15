@@ -2,7 +2,7 @@ import React from "react";
 
 const BasicMenu = () => (
   <div>
-    <h2>BasicMenu here.</h2>
+    <h2>Basic Menu</h2>
   </div>
 )
 
