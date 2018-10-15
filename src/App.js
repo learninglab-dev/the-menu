@@ -18,12 +18,10 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
+            <h3>
               all the things.
-            </p>
-
+            </h3>
             <Menu />
             <div>
               <Route exact path="/" component={Home} />

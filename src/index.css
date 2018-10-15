@@ -26,6 +26,9 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
 }
 
 li {
@@ -40,4 +43,6 @@ li {
 
 li:last-child {
     border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
 }
