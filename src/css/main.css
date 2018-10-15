@@ -1,0 +1,11 @@
+body {
+  transition: color 1s ease;
+}
+
+.active {
+  border-bottom: 2px solid rgba(50,200,255,0.9);
+}
+
+pre {
+  font-size: 10pt;
+}

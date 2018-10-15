@@ -1,32 +1,26 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
-const BasicMenu = () => (
+const Menu = () => (
   <div>
-    <ul>
-      <li>
-        <Link to="/">
-          <button>
-            home
-          </button>
-        </Link>
-      </li>
-      <li>
-        <Link to="/about">
-          <button>
+  <ul className="menu">
+        <li>
+          <NavLink exact activeClassName="active" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/about">
             About
-          </button>
-        </Link>
-      </li>
-      <li>
-        <Link to="/basicmenu">
-          <button>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/basicmenu">
             Basic Menu
-          </button>
-        </Link>
-      </li>
-    </ul>
+          </NavLink>
+        </li>
+      </ul>
   </div>
 )
 
-export default BasicMenu;
+export default Menu;

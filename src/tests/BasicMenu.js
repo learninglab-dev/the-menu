@@ -1,8 +1,8 @@
 import React from "react";
 
-const BasicMenu = () => (
+const BasicMenu = (props) => (
   <div>
-    <h2>Basic Menu</h2>
+    <pre>{ JSON.stringify(props.match) }</pre>
   </div>
 )
 
