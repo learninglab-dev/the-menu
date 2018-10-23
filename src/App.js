@@ -9,7 +9,13 @@ import Activity from './tests/Activity';
 import './css/main.css';
 
 const Home = (props) => (
-  <pre>{ JSON.stringify(props.match) }</pre>
+  <div>
+    <img src={logo} className="App-logo" alt="logo" />
+    <h3>
+      all the things.
+    </h3>
+    <pre>{ JSON.stringify(props.match) }</pre>
+  </div>
 )
 
 class App extends Component {
@@ -18,16 +24,13 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h3>
-              all the things.
-            </h3>
-            <Menu />
+
             <div>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/basicmenu" component={BasicMenu} />
               <Route path="/activity/:id" component={Activity} />
+              <Menu />
             </div>
           </header>
         </div>
